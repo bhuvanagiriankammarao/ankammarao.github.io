@@ -9,6 +9,33 @@
             text-align: right;
             background-color: yellow;
             border-style: solid;
+        }
+        .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+.project-card {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  margin-bottom: 5px;
+}
+
+.project-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+        
     </style>
 </head>
 <body>
@@ -24,11 +51,20 @@
             </div>
 
   <h1><b>MYPROJECTS</b></h1>
-
- <a href="https://bhuvanagiriankammarao.github.io/coffeshop/">coffeshop</a><br>
+  <div class="projects">
+      <div class="project-card">
+          <h3>coffeshop</h3>
+    <a href="https://bhuvanagiriankammarao.github.io/coffeshop/">coffeshop</a><br>
+         </div> 
+      <div class="project-card">
+        <h3>Project 2-Social-Reacct</h3>
     <a href="https://bhuvanagiriankammarao.github.io/social-react">social-react</a><br>
+      </div>
+          <div class="project-card">
+        <h3>Project 3-myapp</h3>
     <a href="https://bhuvanagiriankammarao.github.io/myapp/">myapp</a>
-  
+          </div>
+      </div>
 
 
 </body>
